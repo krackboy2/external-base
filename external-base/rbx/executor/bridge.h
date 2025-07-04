@@ -6,7 +6,7 @@ namespace executor {
         {
             std::thread([] {
                 std::filesystem::path library = std::filesystem::current_path();
-                std::filesystem::path executeFile = library / "execu.txt";
+                std::filesystem::path executeFile = library / "bridge.txt";
                 std::filesystem::path autoexec = library / "autoexec";
                 std::filesystem::path workspace = library / "workspace";
 

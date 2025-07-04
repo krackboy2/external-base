@@ -16,7 +16,7 @@ namespace execution {
             while (true) {}
         }
 
-        auto ScriptsHolder = CoreGui.findfirstchild("external_holder");
+        auto ScriptsHolder = CoreGui.waitforchild("external_holder");
         if (!ScriptsHolder.valid(true))
         {
             std::cout << "oh, shit, error while getting 'external_holder'!\n";

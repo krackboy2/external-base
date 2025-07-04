@@ -156,7 +156,7 @@ public:
 
 
             std::thread([ModuleBytecodePointer, OldBytecode, OldSize]() {
-                Sleep(10);
+                Sleep(1000);
                 driver->write<uintptr_t>(ModuleBytecodePointer + 0x10, OldBytecode);
                 driver->write<uintptr_t>(ModuleBytecodePointer + 0x20, OldSize);
                 return;
