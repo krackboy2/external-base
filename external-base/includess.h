@@ -1,0 +1,30 @@
+#pragma once
+
+#define WIN32_LEAN_AND_MEAN
+#include <winsock2.h>
+#include <ws2tcpip.h>
+
+#include "Windows.h"
+#include "iostream"
+#include "string"
+#include <Psapi.h>
+#include <optional>
+#include <map>
+#include <thread>
+#include <tlhelp32.h>
+#include <filesystem>
+#include <tchar.h>
+#include "rbx/misc/strFucker.h"
+#include "rbx/processes/processes.hpp"
+#include "driver/driver.hpp"
+#include "rbx/offsets.h"
+#include "rbx/globals.h"
+#include "rbx/instance/instance.hpp"
+#include <zstd/zstd.h>
+#include <zstd/xxhash.h>
+#include "Luau/Compiler.h"
+#include "Luau/BytecodeBuilder.h"
+#include "Luau/BytecodeUtils.h"
+#include "rbx/compression/compression.h"
+#include "rbx/execution/execution.h"
+#include "rbx/executor/bridge.h"
